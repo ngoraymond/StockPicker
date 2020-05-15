@@ -9,9 +9,10 @@ name = []
 PE_Ratio = []
 Sector = []
 mCap = []
-info = []
+desc = []
 
-print(yf.Ticker("MSFT").info)
+#print(yf.Ticker("REGN").info)
+#time.sleep(1000)
 
 separater = 0
 url = requests.get('https://www.slickcharts.com/sp500')
@@ -28,18 +29,27 @@ for TK in ticker:
     print(TK)
     TK = TK.replace(".","-")
     try:
-        tikInfo = yf.Ticker(TK).info
-        print(tikInfo["longBusinessSummary"])
-        mCap.append(tikInfo["marketCap"])
-        PE_Ratio.append(tikInfo["forwardPE"])
-        Sector.append(tikInfo["sector"])
-        info.append(tikInfo["longBusinessSummary"])
+        tik = yf.Ticker(TK)
+        try:
+            print(tik.info["longBusinessSummary"])
+        except:
+            print("No Summary")
+        mCap.append(tik.info["marketCap"])
+        PE_Ratio.append(tik.info["forwardPE"])
+        try:
+            Sector.append(tik.info["sector"])
+        except:
+            Sector.append("N/A")
+        try:
+            desc.append(tik.info["longBusinessSummary"])
+        except:
+            desc.append("N/A")
     except: 
         mCap.append("N/A")
         PE_Ratio.append("N/A")
         Sector.append("N/A")
-        info.append("N/A")
+        desc.append("N/A")
        
 print("DONE!")
-df = pandas.DataFrame({'Name':name,'Ticker':ticker, 'Sector':Sector,'Market Cap':mCap, 'PE':PE_Ratio, 'Info':info}) 
+df = pandas.DataFrame({'Name':name,'Ticker':ticker, 'Sector':Sector,'Market Cap':mCap, 'PE':PE_Ratio, 'Desc':desc}) 
 df.to_excel("Stock Picker/stonks.xlsx")

@@ -30,6 +30,7 @@ for TK in ticker:
     TK = TK.replace(".","-")
     try:
         tik = yf.Ticker(TK)
+        print(tik.info)
         try:
             print(tik.info["longBusinessSummary"])
         except:

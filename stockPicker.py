@@ -10,7 +10,7 @@ from pathlib import Path
 filePath = "Stock Picker/stockInfo.xlsx"
 
 def sp500_ticker_name():
-    stockDict = []
+    stockList = []
     separater = 0
     url = requests.get('https://www.slickcharts.com/sp500')
     info = BeautifulSoup(url.text,'html.parser')
@@ -18,18 +18,29 @@ def sp500_ticker_name():
         for y in x('td'):
             for z in y.findAll('a'):
                 if separater%2==1:
-                    stockDict.append({'ticker':z.get_text()})
+                    stockList.append({'ticker':z.get_text()})
                 separater+=1
     with open('Stock Picker/sp500List', 'wb') as fp:
-        pickle.dump(stockDict, fp)
-    return stockDict
+        pickle.dump(stockList, fp)
+    print('Scraped S&P 500')
+    return stockList
+
+def new_scraper():
+    wikiScrape = pandas.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
+    #first entry is the current members
+    onlyCurrent = wikiScrape[0]
+    with open('Stock Picker/sp500List', 'wb') as fp:
+        pickle.dump(onlyCurrent, fp)
+    return onlyCurrent['Symbol'].tolist()
 
 def get_stock_info():
-    tick_list = sp500_ticker_name()
+    tick_list = new_scraper()
     stockInfos = []
     failed = []
     for TK in tick_list:
-        tk_name = TK['ticker']
+        #For the other function
+        #tk_name = TK['ticker']
+        tk_name = TK
         print(tk_name)
         tk_name = tk_name.replace(".","-")
         if tk_name == 'GOOGL':
@@ -43,8 +54,13 @@ def get_stock_info():
             except:
                 print("No Summary")
         except: 
-            print(tk_name + ' Not found')  
-            failed.append(tk_name)
+            #try twice
+            try:
+                stockInfos.append(yf.Ticker(tk_name).info)
+                print('Second Chance Success')
+            except:
+                print(tk_name + ' Not found')  
+                failed.append(tk_name)
         time.sleep(1.0)
     print(failed)
     if len(stockInfos) < 450:

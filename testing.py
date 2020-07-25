@@ -1,3 +1,4 @@
 import yfinance as yf 
+import json
 
-print(yf.Ticker('BLK').info)
+print(json.dumps(yf.Ticker('VZ').info, indent=4))

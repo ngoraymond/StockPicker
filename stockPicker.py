@@ -70,10 +70,11 @@ def get_stock_info():
             stockInfos.append(yf.Ticker(tk_name).info)
             print(tk_name + ' Third Chance Success')
         except:
-            print('Fail' + tk_name)
+            print('Fail ' + tk_name)
             continue
     if len(stockInfos) < 450:
-        return []
+        print('NOT ENOUGH INFO')
+        return stockInfos
     else:
         print("DONE!")
         #PUT TO EXCEL

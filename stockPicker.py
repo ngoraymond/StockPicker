@@ -56,13 +56,22 @@ def get_stock_info():
         except: 
             #try twice
             try:
+                time.sleep(1.0)
                 stockInfos.append(yf.Ticker(tk_name).info)
                 print('Second Chance Success')
             except:
                 print(tk_name + ' Not found')  
                 failed.append(tk_name)
         time.sleep(1.0)
+    print('Unable to be found ')
     print(failed)
+    for tk_name in failed:
+        try:
+            stockInfos.append(yf.Ticker(tk_name).info)
+            print(tk_name + ' Third Chance Success')
+        except:
+            print('Fail' + tk_name)
+            continue
     if len(stockInfos) < 450:
         return []
     else:

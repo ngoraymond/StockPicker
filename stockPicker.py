@@ -71,8 +71,8 @@ def get_stock_info():
             print(tk_name + ' Third Chance Success')
         except:
             print('Fail ' + tk_name)
-            continue
-    if len(stockInfos) < 450:
+        time.sleep(1.0)
+    if len(stockInfos) < 425:
         print('NOT ENOUGH INFO')
         return stockInfos
     else:
@@ -95,7 +95,7 @@ def picker():
         get_stock_info()
     grpBy = pandas.read_excel(filePath)
     stock_dict = grpBy.to_dict('records')
-    if len(stock_dict) < 450:
+    if len(stock_dict) < 425:
         print('Redoing')
         get_stock_info()
         picker()

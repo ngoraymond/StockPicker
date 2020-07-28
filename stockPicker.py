@@ -5,9 +5,14 @@ import pandas
 import time
 import pickle
 import os
+import itertools
+import statistics
 from pathlib import Path
 
 filePath = "Stock Picker/stockInfo.xlsx"
+
+def sleep():
+    time.sleep(3.0)
 
 def sp500_ticker_name():
     stockList = []
@@ -29,7 +34,7 @@ def new_scraper():
     wikiScrape = pandas.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     #first entry is the current members
     onlyCurrent = wikiScrape[0]
-    with open('Stock Picker/sp500List', 'wb') as fp:
+    with open('Stock Picker/sp500List.txt', 'wb') as fp:
         pickle.dump(onlyCurrent, fp)
     return onlyCurrent['Symbol'].tolist()
 
@@ -43,11 +48,12 @@ def get_stock_info():
         tk_name = TK
         print(tk_name)
         tk_name = tk_name.replace(".","-")
-        if tk_name == 'GOOGL':
-            continue
         try:
             tik = yf.Ticker(tk_name)
             #TK['name'] = tik.info["shortName"]
+            if len(stockInfos) > 0 and tik.info['shortName'] == stockInfos[-1]['shortName']:
+                sleep()
+                continue 
             stockInfos.append(tik.info)
             try:
                 print(tik.info["longBusinessSummary"])
@@ -56,13 +62,13 @@ def get_stock_info():
         except: 
             #try twice
             try:
-                time.sleep(1.0)
+                sleep()
                 stockInfos.append(yf.Ticker(tk_name).info)
                 print('Second Chance Success')
             except:
                 print(tk_name + ' Not found')  
                 failed.append(tk_name)
-        time.sleep(1.0)
+        sleep()
     print('Unable to be found ')
     print(failed)
     for tk_name in failed:
@@ -71,8 +77,8 @@ def get_stock_info():
             print(tk_name + ' Third Chance Success')
         except:
             print('Fail ' + tk_name)
-        time.sleep(1.0)
-    if len(stockInfos) < 425:
+        sleep()
+    if len(stockInfos) < 450:
         print('NOT ENOUGH INFO')
         return stockInfos
     else:
@@ -86,6 +92,7 @@ def get_stock_info():
         return stockInfos
 
 def picker():
+    #Get info for S&P 500 stocks every day
     if Path(filePath).is_file():
         last_modified = os.stat(filePath).st_mtime
         elapsedTime = time.time() - last_modified
@@ -93,17 +100,34 @@ def picker():
             get_stock_info()
     else:
         get_stock_info()
+    #GO TO EXCEL FILE, MAKE SURE AT LEAST CERTAIN AMOUNT OF STOCKS
     grpBy = pandas.read_excel(filePath)
     stock_dict = grpBy.to_dict('records')
-    if len(stock_dict) < 425:
+    if len(stock_dict) < 450:
         print('Redoing')
         get_stock_info()
         picker()
+    
+    #ACTUAL STOCK PICKING STARTS HERE
+
+    #ONLY PROFITABLE
     only_profitable = lambda elem:elem['forwardPE'] > 0 and elem['trailingEps'] > 0
     stock_profit = filter(only_profitable, stock_dict)
-    for itm in stock_profit:
-        print(itm['shortName'] + ' ' + itm['sector'])
-    by_sector = grpBy.groupby('sector')
+    #for itm in stock_profit:
+        #print(itm['longName'] + ': ' + itm['sector'])
+
+    #SEPARATE BY SECTOR
+    sectorFunc = lambda x : str(x['sector'])
+    #Dataframe version grpBy.groupby('sector')
+    by_sector = itertools.groupby(sorted(stock_profit, key=sectorFunc), sectorFunc)
+    for x in by_sector:
+        listOfStocks = list(x[1])
+        print(listOfStocks[0]['sector'])
+        #GET the average forward PE of each sector
+        avgforwardPE = statistics.mean(map(lambda x:x['forwardPE'], listOfStocks))
+        belowAvgPE = filter(lambda x: x['forwardPE'] < avgforwardPE, listOfStocks)
+        for y in belowAvgPE:
+            print('    '+y['shortName'])
         
 
 if __name__ == '__main__':

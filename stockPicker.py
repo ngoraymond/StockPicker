@@ -15,6 +15,9 @@ def sleep():
     time.sleep(3.0)
 
 def sp500_ticker_name():
+    storeFile = 'Stock Picker/sp500List'
+    if Path(storeFile).is_file():
+        return pickle.load(storeFile)
     stockList = []
     separater = 0
     url = requests.get('https://www.slickcharts.com/sp500')
@@ -25,7 +28,7 @@ def sp500_ticker_name():
                 if separater%2==1:
                     stockList.append({'ticker':z.get_text()})
                 separater+=1
-    with open('Stock Picker/sp500List', 'wb') as fp:
+    with open(storeFile, 'wb') as fp:
         pickle.dump(stockList, fp)
     print('Scraped S&P 500')
     return stockList
@@ -97,6 +100,7 @@ def picker():
         last_modified = os.stat(filePath).st_mtime
         elapsedTime = time.time() - last_modified
         if elapsedTime > 86400:
+            print('Refreshing')
             get_stock_info()
     else:
         get_stock_info()

@@ -94,6 +94,14 @@ def get_stock_info():
             pickle.dump(stockInfos,fp)
         return stockInfos
 
+def screener(x):
+    #Beta below 1.5
+    lowBeta = x['beta'] < 1.5
+    #checks the previous close is not the 52 week low, and the 50 day average is higher than 200 day average
+    aboveLows = x['regularMarketPreviousClose'] > x['fiftyTwoWeekLow']
+    goldenCross = x['fiftyDayAverage'] > x['twoHundredDayAverage']
+    return lowBeta and aboveLows and goldenCross
+
 def picker():
     #Get info for S&P 500 stocks every day
     if Path(filePath).is_file():
@@ -121,17 +129,21 @@ def picker():
         #print(itm['longName'] + ': ' + itm['sector'])
 
     #SEPARATE BY SECTOR
-    sectorFunc = lambda x : str(x['sector'])
+    sectorFunc = lambda x : str(x['industry'])
     #Dataframe version grpBy.groupby('sector')
     by_sector = itertools.groupby(sorted(stock_profit, key=sectorFunc), sectorFunc)
     for x in by_sector:
         listOfStocks = list(x[1])
-        print(listOfStocks[0]['sector'])
         #GET the average forward PE of each sector
         avgforwardPE = statistics.mean(map(lambda x:x['forwardPE'], listOfStocks))
-        belowAvgPE = filter(lambda x: x['forwardPE'] < avgforwardPE, listOfStocks)
-        for y in belowAvgPE:
+        belowAvgPE = filter(lambda x: x['forwardPE'] <= avgforwardPE, listOfStocks)
+        #run screener
+        passesScreen = filter(screener, belowAvgPE)
+        print(listOfStocks[0]['industry'])
+        for y in passesScreen:
             print('    '+y['shortName'])
+        print('----------------------------------------------------------------')
+
         
 
 if __name__ == '__main__':

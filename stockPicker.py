@@ -15,7 +15,7 @@ def sleep():
     time.sleep(3.0)
 
 def sp500_ticker_name():
-    storeFile = 'Stock Picker/sp500List'
+    storeFile = 'Stock Picker/sp500List.json'
     with open(storeFile, 'r') as fp:
         return json.load(fp)
     stockList = []
@@ -29,7 +29,7 @@ def sp500_ticker_name():
                     stockList.append({'ticker':z.get_text()})
                 separater+=1
     with open(storeFile, 'wb') as fp:
-        fp.write(json.dumps(stockList), indent=4)
+        fp.write(json.dumps(stockList, indent=4))
     print('Scraped S&P 500')
     return stockList
 
@@ -37,8 +37,8 @@ def new_scraper():
     wikiScrape = pandas.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     #first entry is the current members
     onlyCurrent = wikiScrape[0]
-    with open('Stock Picker/sp500List', 'wb') as fp:
-        fp.write(json.dumps(onlyCurrent), indent=4)
+    with open('Stock Picker/sp500List.json', 'wb') as fp:
+        fp.write(json.dumps(onlyCurrent, indent=4))
     return onlyCurrent['Symbol'].tolist()
 
 def get_stock_info():
@@ -90,8 +90,8 @@ def get_stock_info():
         df = pandas.DataFrame(stockInfos) 
         df.to_excel(filePath)
         #DUMP TO FILE
-        with open('Stock Picker/stockInfo', 'wb') as fp:
-            pickle.dump(stockInfos,fp)
+        with open('Stock Picker/stockInfo.json', 'wb') as fp:
+            fp.write(json.dumps(stockInfos, indent=4))
         return stockInfos
 
 def screener(x):
@@ -152,4 +152,6 @@ def picker():
         
 
 if __name__ == '__main__':
-    print(picker())
+    result = picker()
+    with open('Stock Picker/results.json', 'w') as fp:
+        fp.write(result)

@@ -3,10 +3,10 @@ import yfinance as yf
 from bs4 import BeautifulSoup
 import pandas
 import time
-import pickle
 import os
 import itertools
 import statistics
+import json
 from pathlib import Path
 
 filePath = "Stock Picker/stockInfo.xlsx"
@@ -16,8 +16,8 @@ def sleep():
 
 def sp500_ticker_name():
     storeFile = 'Stock Picker/sp500List'
-    if Path(storeFile).is_file():
-        return pickle.load(storeFile)
+    with open(storeFile, 'r') as fp:
+        return json.load(fp)
     stockList = []
     separater = 0
     url = requests.get('https://www.slickcharts.com/sp500')
@@ -29,7 +29,7 @@ def sp500_ticker_name():
                     stockList.append({'ticker':z.get_text()})
                 separater+=1
     with open(storeFile, 'wb') as fp:
-        pickle.dump(stockList, fp)
+        fp.write(json.dumps(stockList), indent=4)
     print('Scraped S&P 500')
     return stockList
 
@@ -37,8 +37,8 @@ def new_scraper():
     wikiScrape = pandas.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     #first entry is the current members
     onlyCurrent = wikiScrape[0]
-    with open('Stock Picker/sp500List.txt', 'wb') as fp:
-        pickle.dump(onlyCurrent, fp)
+    with open('Stock Picker/sp500List', 'wb') as fp:
+        fp.write(json.dumps(onlyCurrent), indent=4)
     return onlyCurrent['Symbol'].tolist()
 
 def get_stock_info():
@@ -100,6 +100,7 @@ def screener(x):
     #checks the previous close is not the 52 week low, and the 50 day average is higher than 200 day average
     aboveLows = x['regularMarketPreviousClose'] > x['fiftyTwoWeekLow']
     goldenCross = x['fiftyDayAverage'] > x['twoHundredDayAverage']
+    #growing = x['earningsQuarterlyGrowth'] >= 0
     return lowBeta and aboveLows and goldenCross
 
 def picker():
@@ -122,17 +123,18 @@ def picker():
     
     #ACTUAL STOCK PICKING STARTS HERE
 
+    recommendedStock = {}
+
     #ONLY PROFITABLE
     only_profitable = lambda elem:elem['forwardPE'] > 0 and elem['trailingEps'] > 0
     stock_profit = filter(only_profitable, stock_dict)
-    #for itm in stock_profit:
-        #print(itm['longName'] + ': ' + itm['sector'])
 
     #SEPARATE BY SECTOR
     sectorFunc = lambda x : str(x['industry'])
     #Dataframe version grpBy.groupby('sector')
     by_sector = itertools.groupby(sorted(stock_profit, key=sectorFunc), sectorFunc)
     for x in by_sector:
+        add = []
         listOfStocks = list(x[1])
         #GET the average forward PE of each sector
         avgforwardPE = statistics.mean(map(lambda x:x['forwardPE'], listOfStocks))
@@ -141,10 +143,13 @@ def picker():
         passesScreen = filter(screener, belowAvgPE)
         print(listOfStocks[0]['industry'])
         for y in passesScreen:
+            add.append(y)
             print('    '+y['shortName'])
         print('----------------------------------------------------------------')
+        recommendedStock[listOfStocks[0]['industry']] = add
+    return json.dumps(recommendedStock, indent=4)
 
         
 
 if __name__ == '__main__':
-    picker()
+    print(picker())

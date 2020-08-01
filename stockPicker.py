@@ -37,8 +37,7 @@ def new_scraper():
     wikiScrape = pandas.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     #first entry is the current members
     onlyCurrent = wikiScrape[0]
-    with open('Stock Picker/sp500List.json', 'wb') as fp:
-        fp.write(json.dumps(onlyCurrent, indent=4))
+    onlyCurrent.to_json(r'Stock Picker/sp500List.json', orient='records', indent=4)
     return onlyCurrent['Symbol'].tolist()
 
 def get_stock_info():

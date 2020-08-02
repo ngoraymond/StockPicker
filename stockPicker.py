@@ -28,7 +28,7 @@ def sp500_ticker_name():
                 if separater%2==1:
                     stockList.append({'ticker':z.get_text()})
                 separater+=1
-    with open(storeFile, 'wb') as fp:
+    with open(storeFile, 'w') as fp:
         fp.write(json.dumps(stockList, indent=4))
     print('Scraped S&P 500')
     return stockList
@@ -86,10 +86,11 @@ def get_stock_info():
     else:
         print("DONE!")
         #PUT TO EXCEL
+        stockInfos = sorted(stockInfos, key=lambda x: x['marketCap'], reverse=True)
         df = pandas.DataFrame(stockInfos) 
         df.to_excel(filePath)
         #DUMP TO FILE
-        with open('Stock Picker/stockInfo.json', 'wb') as fp:
+        with open('Stock Picker/stockInfo.json', 'w') as fp:
             fp.write(json.dumps(stockInfos, indent=4))
         return stockInfos
 

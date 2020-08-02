@@ -101,7 +101,21 @@ def screener(x):
     aboveLows = x['regularMarketPreviousClose'] > x['fiftyTwoWeekLow']
     goldenCross = x['fiftyDayAverage'] > x['twoHundredDayAverage']
     #growing = x['earningsQuarterlyGrowth'] >= 0
-    return lowBeta and aboveLows and goldenCross
+
+    if not (lowBeta and aboveLows and goldenCross):
+        return False
+
+    #GATHERING SENTIMENT VIA STOCK DOWNGRADES/UPGRADES
+    #check for the actions made
+    try:
+        recommendations = yf.Ticker(x['symbol']).recommendations.to_dict('list')['Action']
+        numPos = len([x for x in recommendations if x == 'up'])
+        numNeg = len([x for x in recommendations if x == 'down'])
+        posSentiment = numPos >= numNeg
+
+        return posSentiment
+    except:
+        return True
 
 def picker():
     #Get info for S&P 500 stocks every day

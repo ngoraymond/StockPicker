@@ -3,4 +3,6 @@ import json
 
 print(json.dumps(yf.Ticker('t').info, indent=4))
 
-print(type(yf.Ticker('t').info['marketCap']))
+print(yf.Ticker('t').recommendations.to_dict('list')['Action'])
+
+yf.Ticker('aapl').recommendations.to_excel('APPLERECS.xlsx')

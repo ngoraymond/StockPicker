@@ -9,14 +9,14 @@ import statistics
 import json
 from pathlib import Path
 
-filePath = "Stock Picker/stockInfo.xlsx"
+sp500_info_json_path =  'Stock Picker/Results/sp500List.json'
+stock_info_excel_path = "Stock Picker/Results/stockInfo.xlsx"
 
 def sleep():
     time.sleep(3.0)
 
 def sp500_ticker_name():
-    storeFile = 'Stock Picker/sp500List.json'
-    with open(storeFile, 'r') as fp:
+    with open(sp500_info_json_path, 'r') as fp:
         return json.load(fp)
     stockList = []
     separater = 0
@@ -28,7 +28,7 @@ def sp500_ticker_name():
                 if separater%2==1:
                     stockList.append({'ticker':z.get_text()})
                 separater+=1
-    with open(storeFile, 'w') as fp:
+    with open(sp500_info_json_path, 'w') as fp:
         fp.write(json.dumps(stockList, indent=4))
     print('Scraped S&P 500')
     return stockList
@@ -37,8 +37,15 @@ def new_scraper():
     wikiScrape = pandas.read_html('https://en.wikipedia.org/wiki/List_of_S%26P_500_companies')
     #first entry is the current members
     onlyCurrent = wikiScrape[0]
-    onlyCurrent.to_json(r'Stock Picker/sp500List.json', orient='records', indent=4)
+    onlyCurrent.to_json(r'Stock Picker/Results/sp500List.json', orient='records', indent=4)
     return onlyCurrent['Symbol'].tolist()
+
+def stock_info():
+    tick_list = new_scraper()
+    request_string = ''
+    for x in tick_list:
+        request_string = request_string + x + ' '
+    all_info = yf.Tickers(request_string)
 
 def get_stock_info():
     tick_list = new_scraper()
@@ -88,9 +95,9 @@ def get_stock_info():
         #PUT TO EXCEL
         stockInfos = sorted(stockInfos, key=lambda x: x['marketCap'], reverse=True)
         df = pandas.DataFrame(stockInfos) 
-        df.to_excel(filePath)
+        df.to_excel(stock_info_excel_path)
         #DUMP TO FILE
-        with open('Stock Picker/stockInfo.json', 'w') as fp:
+        with open('Stock Picker/Results/stockInfo.json', 'w') as fp:
             fp.write(json.dumps(stockInfos, indent=4))
         return stockInfos
 
@@ -108,9 +115,10 @@ def screener(x):
     #GATHERING SENTIMENT VIA STOCK DOWNGRADES/UPGRADES
     #check for the actions made
     try:
-        recommendations = yf.Ticker(x['symbol']).recommendations.to_dict('list')['Action']
-        numPos = len([x for x in recommendations if x == 'up'])
-        numNeg = len([x for x in recommendations if x == 'down'])
+        recentRecs = yf.Ticker(x['symbol']).recommendations
+        recList = recentRecs.to_dict('list')['Action']
+        numPos = len([x for x in recList if x == 'up'])
+        numNeg = len([x for x in recList if x == 'down'])
         posSentiment = numPos >= numNeg
 
         return posSentiment
@@ -167,5 +175,5 @@ def picker():
 
 if __name__ == '__main__':
     result = picker()
-    with open('Stock Picker/results.json', 'w') as fp:
+    with open('Stock Picker/selected_stocks.json', 'w') as fp:
         fp.write(result)

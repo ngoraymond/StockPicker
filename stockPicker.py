@@ -26,7 +26,7 @@ def sp500_ticker_name():
         for y in x('td'):
             for z in y.findAll('a'):
                 if separater%2==1:
-                    stockList.append({'ticker':z.get_text()})
+                    stockList.append(z.get_text())
                 separater+=1
     with open(sp500_info_json_path, 'w') as fp:
         fp.write(json.dumps(stockList, indent=4))
@@ -46,20 +46,34 @@ def stock_info():
     for x in tick_list:
         request_string = request_string + x + ' '
     all_info = yf.Tickers(request_string)
+    stockInfos = []
+    for tk in all_info:
+        stockInfos.append(tk.info)
+    if len(stockInfos) < 450:
+        print('NOT ENOUGH INFO')
+        return stockInfos
+    else:
+        print("DONE!")
+        #PUT TO EXCEL
+        stockInfos = sorted(stockInfos, key=lambda x: x['marketCap'], reverse=True)
+        df = pandas.DataFrame(stockInfos) 
+        df.to_excel(stock_info_excel_path)
+        #DUMP TO FILE
+        with open('Stock Picker/Results/stockInfo.json', 'w') as fp:
+            fp.write(json.dumps(stockInfos, indent=4))
+        return stockInfos
+    
+
 
 def get_stock_info():
     tick_list = new_scraper()
     stockInfos = []
     failed = []
-    for TK in tick_list:
-        #For the other function
-        #tk_name = TK['ticker']
-        tk_name = TK
+    for tk_name in tick_list:
         print(tk_name)
         tk_name = tk_name.replace(".","-")
         try:
             tik = yf.Ticker(tk_name)
-            #TK['name'] = tik.info["shortName"]
             if len(stockInfos) > 0 and tik.info['shortName'] == stockInfos[-1]['shortName']:
                 sleep()
                 continue 
@@ -127,8 +141,8 @@ def screener(x):
 
 def picker():
     #Get info for S&P 500 stocks every day
-    if Path(filePath).is_file():
-        last_modified = os.stat(filePath).st_mtime
+    if Path(stock_info_excel_path).is_file():
+        last_modified = os.stat(stock_info_excel_path).st_mtime
         elapsedTime = time.time() - last_modified
         if elapsedTime > 86400:
             print('Refreshing')
@@ -136,7 +150,7 @@ def picker():
     else:
         get_stock_info()
     #GO TO EXCEL FILE, MAKE SURE AT LEAST CERTAIN AMOUNT OF STOCKS
-    grpBy = pandas.read_excel(filePath)
+    grpBy = pandas.read_excel(stock_info_excel_path)
     stock_dict = grpBy.to_dict('records')
     if len(stock_dict) < 450:
         print('Redoing')

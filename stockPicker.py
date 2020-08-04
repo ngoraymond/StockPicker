@@ -40,15 +40,17 @@ def new_scraper():
     onlyCurrent.to_json(r'Stock Picker/Results/sp500List.json', orient='records', indent=4)
     return onlyCurrent['Symbol'].tolist()
 
-def stock_info():
+def stock_info_all_at_once():
     tick_list = new_scraper()
     request_string = ''
     for x in tick_list:
         request_string = request_string + x + ' '
     all_info = yf.Tickers(request_string)
     stockInfos = []
-    for tk in all_info:
-        stockInfos.append(tk.info)
+    for tk in tick_list:
+        strCMD = 'all_info.tickers.'+tk+'.info'
+        print(tk)
+        stockInfos.append(exec(strCMD))
     if len(stockInfos) < 450:
         print('NOT ENOUGH INFO')
         return stockInfos

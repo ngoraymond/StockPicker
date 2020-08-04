@@ -13,4 +13,7 @@ print(df.to_dict('list')['Action'])
 
 yf.Ticker('aapl').recommendations.to_excel('APPLERECS.xlsx')
 
-print(df[.loc[df['Date'].between(oneyearago, curtime)]])
+#print(df[.loc[df['Date'].between(oneyearago, curtime)]])
+
+tks = yf.Tickers('AAPL MMM BRK.B')
+print(tks.tickers.AAPL.info)

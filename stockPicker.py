@@ -3,6 +3,7 @@ import yfinance as yf
 from bs4 import BeautifulSoup
 import pandas
 import time
+import datetime
 import os
 import itertools
 import statistics
@@ -11,6 +12,10 @@ from pathlib import Path
 
 sp500_info_json_path =  'Stock Picker/Results/sp500List.json'
 stock_info_excel_path = "Stock Picker/Results/stockInfo.xlsx"
+
+#get dateTime
+curtime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+oneyearago = datetime.now().replace(year=datetime.now().year - 1).strftime("%Y-%m-%d %H:%M:%S")
 
 def sleep():
     time.sleep(3.0)
@@ -132,7 +137,12 @@ def screener(x):
     #check for the actions made
     try:
         recentRecs = yf.Ticker(x['symbol']).recommendations
-        recList = recentRecs.to_dict('list')['Action']
+        #move the date to become a regular column   
+        recentRecs['Date'] = recentRecs.index
+        #filter for recent ratings only
+        mask = (df['Date'] > oneyearago) & (df['Date'] <= curtime)
+
+        recList = recentRecs.loc[mask].to_dict('list')['Action']
         numPos = len([x for x in recList if x == 'up'])
         numNeg = len([x for x in recList if x == 'down'])
         posSentiment = numPos >= numNeg
@@ -148,16 +158,20 @@ def picker():
         elapsedTime = time.time() - last_modified
         if elapsedTime > 86400:
             print('Refreshing')
-            get_stock_info()
+            stock_info_all_at_once()
     else:
-        get_stock_info()
+        stock_info_all_at_once()
     #GO TO EXCEL FILE, MAKE SURE AT LEAST CERTAIN AMOUNT OF STOCKS
     grpBy = pandas.read_excel(stock_info_excel_path)
     stock_dict = grpBy.to_dict('records')
     if len(stock_dict) < 450:
         print('Redoing')
-        get_stock_info()
+        stock_info_all_at_once()
         picker()
+
+    #updating date
+    curtime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    oneyearago = datetime.now().replace(year=datetime.now().year - 1).strftime("%Y-%m-%d %H:%M:%S")
     
     #ACTUAL STOCK PICKING STARTS HERE
 

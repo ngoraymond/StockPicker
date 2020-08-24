@@ -679,7 +679,7 @@
         "Headquarters Location":"Broomfield, Colorado",
         "Date first added":"1984-10-31",
         "CIK":9389,
-        "Founded":null
+        "Founded":"1880"
     },
     {
         "Symbol":"BAC",
@@ -943,7 +943,7 @@
         "Headquarters Location":"Dublin, Ohio",
         "Date first added":"1997-05-27",
         "CIK":721371,
-        "Founded":null
+        "Founded":"1971"
     },
     {
         "Symbol":"KMX",
@@ -954,7 +954,7 @@
         "Headquarters Location":"Richmond, Virginia",
         "Date first added":"2010-06-28",
         "CIK":1170010,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"CCL",
@@ -965,7 +965,7 @@
         "Headquarters Location":"Miami, Florida",
         "Date first added":"1998-12-22",
         "CIK":815097,
-        "Founded":null
+        "Founded":"1972"
     },
     {
         "Symbol":"CARR",
@@ -998,7 +998,7 @@
         "Headquarters Location":"Chicago, Illinois",
         "Date first added":"2017-03-01",
         "CIK":1374310,
-        "Founded":null
+        "Founded":"1973"
     },
     {
         "Symbol":"CBRE",
@@ -1009,7 +1009,7 @@
         "Headquarters Location":"Los Angeles, California",
         "Date first added":"2006-11-10",
         "CIK":1138118,
-        "Founded":null
+        "Founded":"1906"
     },
     {
         "Symbol":"CDW",
@@ -1039,10 +1039,10 @@
         "SEC filings":"reports",
         "GICS Sector":"Health Care",
         "GICS Sub Industry":"Managed Health Care",
-        "Headquarters Location":"St Louis, Missouri",
+        "Headquarters Location":"St. Louis, Missouri",
         "Date first added":"2016-03-30",
         "CIK":1071739,
-        "Founded":null
+        "Founded":"1984"
     },
     {
         "Symbol":"CNP",
@@ -1053,7 +1053,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"1985-07-31",
         "CIK":1130310,
-        "Founded":null
+        "Founded":"1882"
     },
     {
         "Symbol":"CTL",
@@ -1075,7 +1075,7 @@
         "Headquarters Location":"North Kansas City, Missouri",
         "Date first added":"2010-04-30",
         "CIK":804753,
-        "Founded":null
+        "Founded":"1979"
     },
     {
         "Symbol":"CF",
@@ -1086,7 +1086,7 @@
         "Headquarters Location":"Deerfield, Illinois",
         "Date first added":"2008-08-27",
         "CIK":1324404,
-        "Founded":null
+        "Founded":"1946"
     },
     {
         "Symbol":"SCHW",
@@ -1097,7 +1097,7 @@
         "Headquarters Location":"San Francisco, California",
         "Date first added":"1997-06-02",
         "CIK":316709,
-        "Founded":null
+        "Founded":"1971"
     },
     {
         "Symbol":"CHTR",
@@ -1108,7 +1108,7 @@
         "Headquarters Location":"Stamford, Connecticut",
         "Date first added":"2016-09-08",
         "CIK":1091667,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"CVX",
@@ -1130,7 +1130,7 @@
         "Headquarters Location":"Newport Beach, California",
         "Date first added":"2011-04-28",
         "CIK":1058090,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"CB",
@@ -1141,7 +1141,7 @@
         "Headquarters Location":"Zurich, Switzerland",
         "Date first added":"2010-07-15",
         "CIK":896159,
-        "Founded":null
+        "Founded":"1985"
     },
     {
         "Symbol":"CHD",
@@ -1152,7 +1152,7 @@
         "Headquarters Location":"Ewing, New Jersey",
         "Date first added":"2015-12-29",
         "CIK":313927,
-        "Founded":null
+        "Founded":"1847"
     },
     {
         "Symbol":"CI",
@@ -1174,7 +1174,7 @@
         "Headquarters Location":"Fairfield, Ohio",
         "Date first added":"1997-12-18",
         "CIK":20286,
-        "Founded":null
+        "Founded":"1950"
     },
     {
         "Symbol":"CTAS",
@@ -1196,7 +1196,7 @@
         "Headquarters Location":"San Jose, California",
         "Date first added":"1993-12-01",
         "CIK":858877,
-        "Founded":null
+        "Founded":"1984"
     },
     {
         "Symbol":"C",
@@ -1207,7 +1207,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"1988-05-31",
         "CIK":831001,
-        "Founded":null
+        "Founded":"1998"
     },
     {
         "Symbol":"CFG",
@@ -1218,7 +1218,7 @@
         "Headquarters Location":"Providence, Rhode Island",
         "Date first added":"2016-01-29",
         "CIK":759944,
-        "Founded":null
+        "Founded":"1828"
     },
     {
         "Symbol":"CTXS",
@@ -1229,7 +1229,7 @@
         "Headquarters Location":"Fort Lauderdale, Florida",
         "Date first added":"1999-12-01",
         "CIK":877890,
-        "Founded":null
+        "Founded":"1989"
     },
     {
         "Symbol":"CLX",
@@ -1251,7 +1251,7 @@
         "Headquarters Location":"Chicago, Illinois",
         "Date first added":"2006-08-11",
         "CIK":1156375,
-        "Founded":null
+        "Founded":"1848"
     },
     {
         "Symbol":"CMS",
@@ -1262,7 +1262,7 @@
         "Headquarters Location":"Jackson, Michigan",
         "Date first added":"1999-05-03",
         "CIK":811156,
-        "Founded":null
+        "Founded":"1886"
     },
     {
         "Symbol":"KO",
@@ -1284,7 +1284,7 @@
         "Headquarters Location":"Teaneck, New Jersey",
         "Date first added":"2006-11-17",
         "CIK":1058290,
-        "Founded":null
+        "Founded":"1994"
     },
     {
         "Symbol":"CL",
@@ -1306,7 +1306,7 @@
         "Headquarters Location":"Philadelphia, Pennsylvania",
         "Date first added":"2015-09-18",
         "CIK":1166691,
-        "Founded":null
+        "Founded":"1963"
     },
     {
         "Symbol":"CMA",
@@ -1317,7 +1317,7 @@
         "Headquarters Location":"Dallas, Texas",
         "Date first added":"1995-12-01",
         "CIK":28412,
-        "Founded":null
+        "Founded":"1849"
     },
     {
         "Symbol":"CAG",
@@ -1339,7 +1339,7 @@
         "Headquarters Location":"Midland, Texas",
         "Date first added":"2016-02-22",
         "CIK":1358071,
-        "Founded":null
+        "Founded":"2004"
     },
     {
         "Symbol":"COP",
@@ -1372,7 +1372,7 @@
         "Headquarters Location":"Victor, New York",
         "Date first added":"2005-07-01",
         "CIK":16918,
-        "Founded":null
+        "Founded":"1945"
     },
     {
         "Symbol":"COO",
@@ -1383,7 +1383,7 @@
         "Headquarters Location":"San Ramon, California",
         "Date first added":"2016-09-23",
         "CIK":711404,
-        "Founded":null
+        "Founded":"1958"
     },
     {
         "Symbol":"CPRT",
@@ -1427,7 +1427,7 @@
         "Headquarters Location":"Issaquah, Washington",
         "Date first added":"1993-10-01",
         "CIK":909832,
-        "Founded":null
+        "Founded":"1976"
     },
     {
         "Symbol":"COTY",
@@ -1438,7 +1438,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2016-10-03",
         "CIK":1024305,
-        "Founded":null
+        "Founded":"1904"
     },
     {
         "Symbol":"CCI",
@@ -1449,7 +1449,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"2012-03-14",
         "CIK":1051470,
-        "Founded":null
+        "Founded":"1994"
     },
     {
         "Symbol":"CSX",
@@ -1526,7 +1526,7 @@
         "Headquarters Location":"Denver, Colorado",
         "Date first added":"2008-07-31",
         "CIK":927066,
-        "Founded":null
+        "Founded":"1979"
     },
     {
         "Symbol":"DE",
@@ -1570,7 +1570,7 @@
         "Headquarters Location":"Oklahoma City, Oklahoma",
         "Date first added":"2000-08-30",
         "CIK":1090012,
-        "Founded":null
+        "Founded":"1971"
     },
     {
         "Symbol":"DXCM",
@@ -1625,7 +1625,7 @@
         "Headquarters Location":"Silver Spring, Maryland",
         "Date first added":"2010-03-01",
         "CIK":1437107,
-        "Founded":null
+        "Founded":"1985"
     },
     {
         "Symbol":"DISCK",
@@ -1636,7 +1636,7 @@
         "Headquarters Location":"Silver Spring, Maryland",
         "Date first added":"2014-08-07",
         "CIK":1437107,
-        "Founded":null
+        "Founded":"1985"
     },
     {
         "Symbol":"DISH",
@@ -1647,7 +1647,7 @@
         "Headquarters Location":"Meridian, Colorado",
         "Date first added":"2017-03-13",
         "CIK":1001082,
-        "Founded":null
+        "Founded":"1980"
     },
     {
         "Symbol":"DG",
@@ -1669,7 +1669,7 @@
         "Headquarters Location":"Chesapeake, Virginia",
         "Date first added":"2011-12-19",
         "CIK":935703,
-        "Founded":null
+        "Founded":"1986"
     },
     {
         "Symbol":"D",
@@ -1746,7 +1746,7 @@
         "Headquarters Location":"Indianapolis, Indiana",
         "Date first added":"2017-07-26",
         "CIK":783280,
-        "Founded":null
+        "Founded":"1972"
     },
     {
         "Symbol":"DD",
@@ -1779,7 +1779,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2004-03-31",
         "CIK":1015780,
-        "Founded":null
+        "Founded":"1982"
     },
     {
         "Symbol":"EMN",
@@ -1790,7 +1790,7 @@
         "Headquarters Location":"Kingsport, Tennessee",
         "Date first added":"1994-01-01",
         "CIK":915389,
-        "Founded":null
+        "Founded":"1920"
     },
     {
         "Symbol":"ETN",
@@ -1823,7 +1823,7 @@
         "Headquarters Location":"St. Paul, Minnesota",
         "Date first added":"1989-01-31",
         "CIK":31462,
-        "Founded":null
+        "Founded":"1923"
     },
     {
         "Symbol":"EIX",
@@ -1845,7 +1845,7 @@
         "Headquarters Location":"Irvine, California",
         "Date first added":"2011-04-01",
         "CIK":1099800,
-        "Founded":null
+        "Founded":"1958"
     },
     {
         "Symbol":"EA",
@@ -1856,7 +1856,7 @@
         "Headquarters Location":"Redwood City, California",
         "Date first added":"2002-07-22",
         "CIK":712515,
-        "Founded":null
+        "Founded":"1982"
     },
     {
         "Symbol":"EMR",
@@ -1889,7 +1889,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"2000-11-02",
         "CIK":821189,
-        "Founded":null
+        "Founded":"1999"
     },
     {
         "Symbol":"EFX",
@@ -1911,7 +1911,7 @@
         "Headquarters Location":"Redwood City, California",
         "Date first added":"2015-03-20",
         "CIK":1101239,
-        "Founded":null
+        "Founded":"1998"
     },
     {
         "Symbol":"EQR",
@@ -1922,7 +1922,7 @@
         "Headquarters Location":"Chicago, Illinois",
         "Date first added":"2001-12-03",
         "CIK":906107,
-        "Founded":null
+        "Founded":"1969"
     },
     {
         "Symbol":"ESS",
@@ -1933,7 +1933,7 @@
         "Headquarters Location":"San Mateo, California",
         "Date first added":"2014-04-02",
         "CIK":920522,
-        "Founded":null
+        "Founded":"1971"
     },
     {
         "Symbol":"EL",
@@ -1944,7 +1944,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2006-01-05",
         "CIK":1001250,
-        "Founded":null
+        "Founded":"1946"
     },
     {
         "Symbol":"EVRG",
@@ -1977,7 +1977,7 @@
         "Headquarters Location":"Hamilton, Bermuda",
         "Date first added":"2017-06-19",
         "CIK":1095073,
-        "Founded":null
+        "Founded":"1973"
     },
     {
         "Symbol":"EXC",
@@ -2076,7 +2076,7 @@
         "Headquarters Location":"Rockville, Maryland",
         "Date first added":"2016-02-01",
         "CIK":34903,
-        "Founded":null
+        "Founded":"1962"
     },
     {
         "Symbol":"FDX",
@@ -2098,7 +2098,7 @@
         "Headquarters Location":"Jacksonville, Florida",
         "Date first added":"2006-11-10",
         "CIK":1136893,
-        "Founded":null
+        "Founded":"1968"
     },
     {
         "Symbol":"FITB",
@@ -2142,7 +2142,7 @@
         "Headquarters Location":"Brookfield, Wisconsin",
         "Date first added":"2001-04-02",
         "CIK":798354,
-        "Founded":null
+        "Founded":"1984"
     },
     {
         "Symbol":"FLT",
@@ -2164,7 +2164,7 @@
         "Headquarters Location":"Wilsonville, Oregon",
         "Date first added":"2009-01-02",
         "CIK":354908,
-        "Founded":null
+        "Founded":"1978"
     },
     {
         "Symbol":"FLS",
@@ -2175,7 +2175,7 @@
         "Headquarters Location":"Irving, Texas",
         "Date first added":"2008-10-02",
         "CIK":30625,
-        "Founded":null
+        "Founded":"1997"
     },
     {
         "Symbol":"FMC",
@@ -2186,7 +2186,7 @@
         "Headquarters Location":"Philadelphia, Pennsylvania",
         "Date first added":"2009-08-19",
         "CIK":37785,
-        "Founded":null
+        "Founded":"1883"
     },
     {
         "Symbol":"F",
@@ -2285,7 +2285,7 @@
         "Headquarters Location":"San Francisco, California",
         "Date first added":"1986-08-31",
         "CIK":39911,
-        "Founded":null
+        "Founded":"1969"
     },
     {
         "Symbol":"GRMN",
@@ -2296,7 +2296,7 @@
         "Headquarters Location":"Schaffhausen, Switzerland",
         "Date first added":"2012-12-12",
         "CIK":1121788,
-        "Founded":null
+        "Founded":"1989"
     },
     {
         "Symbol":"IT",
@@ -2307,7 +2307,7 @@
         "Headquarters Location":"Stamford, Connecticut",
         "Date first added":"2017-04-05",
         "CIK":749251,
-        "Founded":null
+        "Founded":"1979"
     },
     {
         "Symbol":"GD",
@@ -2373,7 +2373,7 @@
         "Headquarters Location":"Foster City, California",
         "Date first added":"2004-07-01",
         "CIK":882095,
-        "Founded":null
+        "Founded":"1987"
     },
     {
         "Symbol":"GL",
@@ -2384,7 +2384,7 @@
         "Headquarters Location":"McKinney, Texas",
         "Date first added":"1989-04-30",
         "CIK":320335,
-        "Founded":null
+        "Founded":"1900"
     },
     {
         "Symbol":"GPN",
@@ -2395,7 +2395,7 @@
         "Headquarters Location":"Atlanta, Georgia",
         "Date first added":"2016-04-25",
         "CIK":1123360,
-        "Founded":null
+        "Founded":"2000"
     },
     {
         "Symbol":"GS",
@@ -2406,7 +2406,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2002-07-22",
         "CIK":886982,
-        "Founded":null
+        "Founded":"1869"
     },
     {
         "Symbol":"GWW",
@@ -2428,7 +2428,7 @@
         "Headquarters Location":"Kansas City, Missouri",
         "Date first added":"1986-11-30",
         "CIK":12659,
-        "Founded":null
+        "Founded":"1955"
     },
     {
         "Symbol":"HAL",
@@ -2472,7 +2472,7 @@
         "Headquarters Location":"Pawtucket, Rhode Island",
         "Date first added":"1984-09-30",
         "CIK":46080,
-        "Founded":null
+        "Founded":"1923"
     },
     {
         "Symbol":"HCA",
@@ -2483,7 +2483,7 @@
         "Headquarters Location":"Nashville, Tennessee",
         "Date first added":"2015-01-27",
         "CIK":860730,
-        "Founded":null
+        "Founded":"1968"
     },
     {
         "Symbol":"PEAK",
@@ -2494,7 +2494,7 @@
         "Headquarters Location":"Long Beach, California",
         "Date first added":"2008-03-31",
         "CIK":765880,
-        "Founded":null
+        "Founded":"1985"
     },
     {
         "Symbol":"HSIC",
@@ -2505,7 +2505,7 @@
         "Headquarters Location":"Melville, New York",
         "Date first added":"2015-03-17",
         "CIK":1000228,
-        "Founded":null
+        "Founded":"1932"
     },
     {
         "Symbol":"HSY",
@@ -2527,7 +2527,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"1984-05-31",
         "CIK":4447,
-        "Founded":null
+        "Founded":"1919"
     },
     {
         "Symbol":"HPE",
@@ -2560,7 +2560,7 @@
         "Headquarters Location":"Dallas, Texas",
         "Date first added":"2018-06-18",
         "CIK":48039,
-        "Founded":null
+        "Founded":"1947"
     },
     {
         "Symbol":"HOLX",
@@ -2571,7 +2571,7 @@
         "Headquarters Location":"Marlborough, Massachusetts",
         "Date first added":"2016-03-30",
         "CIK":859737,
-        "Founded":null
+        "Founded":"1985"
     },
     {
         "Symbol":"HD",
@@ -2582,7 +2582,7 @@
         "Headquarters Location":"Atlanta, Georgia",
         "Date first added":"1988-03-31",
         "CIK":354950,
-        "Founded":null
+        "Founded":"1978"
     },
     {
         "Symbol":"HON",
@@ -2604,7 +2604,7 @@
         "Headquarters Location":"Austin, Minnesota",
         "Date first added":"2009-03-04",
         "CIK":48465,
-        "Founded":null
+        "Founded":"1891"
     },
     {
         "Symbol":"HST",
@@ -2615,7 +2615,7 @@
         "Headquarters Location":"Bethesda, Maryland",
         "Date first added":"2007-03-20",
         "CIK":1070750,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"HWM",
@@ -2692,7 +2692,7 @@
         "Headquarters Location":"Westbrook, Maine",
         "Date first added":"2017-01-05",
         "CIK":874716,
-        "Founded":null
+        "Founded":"1983"
     },
     {
         "Symbol":"INFO",
@@ -2714,7 +2714,7 @@
         "Headquarters Location":"Glenview, Illinois",
         "Date first added":"1986-02-28",
         "CIK":49826,
-        "Founded":null
+        "Founded":"1912"
     },
     {
         "Symbol":"ILMN",
@@ -2725,7 +2725,7 @@
         "Headquarters Location":"San Diego, California",
         "Date first added":"2015-11-19",
         "CIK":1110803,
-        "Founded":null
+        "Founded":"1998"
     },
     {
         "Symbol":"INCY",
@@ -2736,7 +2736,7 @@
         "Headquarters Location":"Wilmington, Delaware",
         "Date first added":"2017-02-28",
         "CIK":879169,
-        "Founded":null
+        "Founded":"1991"
     },
     {
         "Symbol":"IR",
@@ -2802,7 +2802,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"1992-10-01",
         "CIK":51644,
-        "Founded":null
+        "Founded":"1961 (1930)"
     },
     {
         "Symbol":"IFF",
@@ -2824,7 +2824,7 @@
         "Headquarters Location":"Mountain View, California",
         "Date first added":"2000-12-05",
         "CIK":896878,
-        "Founded":null
+        "Founded":"1983"
     },
     {
         "Symbol":"ISRG",
@@ -2835,7 +2835,7 @@
         "Headquarters Location":"Sunnyvale, California",
         "Date first added":"2008-06-02",
         "CIK":1035267,
-        "Founded":null
+        "Founded":"1995"
     },
     {
         "Symbol":"IVZ",
@@ -2846,7 +2846,7 @@
         "Headquarters Location":"Atlanta, Georgia",
         "Date first added":"2008-08-21",
         "CIK":914208,
-        "Founded":null
+        "Founded":"1935"
     },
     {
         "Symbol":"IPGP",
@@ -2857,7 +2857,7 @@
         "Headquarters Location":"Oxford, Massachusetts",
         "Date first added":"2018-03-07",
         "CIK":1111928,
-        "Founded":null
+        "Founded":"1990"
     },
     {
         "Symbol":"IQV",
@@ -2879,7 +2879,7 @@
         "Headquarters Location":"Boston, Massachusetts",
         "Date first added":"2009-01-06",
         "CIK":1020569,
-        "Founded":null
+        "Founded":"1951"
     },
     {
         "Symbol":"JKHY",
@@ -2901,7 +2901,7 @@
         "Headquarters Location":"Dallas, Texas",
         "Date first added":"2007-10-26",
         "CIK":52988,
-        "Founded":null
+        "Founded":"1947"
     },
     {
         "Symbol":"JBHT",
@@ -2912,7 +2912,7 @@
         "Headquarters Location":"Lowell, Arkansas",
         "Date first added":"2015-07-01",
         "CIK":728535,
-        "Founded":null
+        "Founded":"1961"
     },
     {
         "Symbol":"SJM",
@@ -2923,7 +2923,7 @@
         "Headquarters Location":"Orrville, Ohio",
         "Date first added":"2008-11-06",
         "CIK":91419,
-        "Founded":null
+        "Founded":"1897"
     },
     {
         "Symbol":"JNJ",
@@ -2945,7 +2945,7 @@
         "Headquarters Location":"Cork, Ireland",
         "Date first added":"2010-08-27",
         "CIK":833444,
-        "Founded":null
+        "Founded":"1885"
     },
     {
         "Symbol":"JPM",
@@ -2978,7 +2978,7 @@
         "Headquarters Location":"Kansas City, Missouri",
         "Date first added":"2013-05-24",
         "CIK":54480,
-        "Founded":null
+        "Founded":"1887"
     },
     {
         "Symbol":"K",
@@ -3000,7 +3000,7 @@
         "Headquarters Location":"Cleveland, Ohio",
         "Date first added":"1994-03-01",
         "CIK":91576,
-        "Founded":null
+        "Founded":"1825"
     },
     {
         "Symbol":"KEYS",
@@ -3121,7 +3121,7 @@
         "Headquarters Location":"Burlington, North Carolina",
         "Date first added":"2004-11-01",
         "CIK":920148,
-        "Founded":null
+        "Founded":"1978"
     },
     {
         "Symbol":"LRCX",
@@ -3132,7 +3132,7 @@
         "Headquarters Location":"Fremont, California",
         "Date first added":"2012-06-29",
         "CIK":707549,
-        "Founded":null
+        "Founded":"1980"
     },
     {
         "Symbol":"LW",
@@ -3242,7 +3242,7 @@
         "Headquarters Location":"Chicago, Illinois",
         "Date first added":"2016-05-23",
         "CIK":1065696,
-        "Founded":null
+        "Founded":"1998"
     },
     {
         "Symbol":"LMT",
@@ -3253,7 +3253,7 @@
         "Headquarters Location":"Bethesda, Maryland",
         "Date first added":"1984-07-31",
         "CIK":936468,
-        "Founded":null
+        "Founded":"1995"
     },
     {
         "Symbol":"L",
@@ -3308,7 +3308,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"1991-05-01",
         "CIK":101778,
-        "Founded":null
+        "Founded":"1887"
     },
     {
         "Symbol":"MPC",
@@ -3352,7 +3352,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"1987-08-31",
         "CIK":62709,
-        "Founded":null
+        "Founded":"1905"
     },
     {
         "Symbol":"MLM",
@@ -3363,7 +3363,7 @@
         "Headquarters Location":"Raleigh, North Carolina",
         "Date first added":"2014-07-02",
         "CIK":916076,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"MAS",
@@ -3385,7 +3385,7 @@
         "Headquarters Location":"Harrison, New York",
         "Date first added":"2008-07-18",
         "CIK":1141391,
-        "Founded":null
+        "Founded":"1966"
     },
     {
         "Symbol":"MKC",
@@ -3473,7 +3473,7 @@
         "Headquarters Location":"Columbus, Ohio",
         "Date first added":"2016-09-06",
         "CIK":1037646,
-        "Founded":null
+        "Founded":"1945"
     },
     {
         "Symbol":"MGM",
@@ -3484,7 +3484,7 @@
         "Headquarters Location":"Paradise, Nevada",
         "Date first added":"2017-07-26",
         "CIK":789570,
-        "Founded":null
+        "Founded":"1986"
     },
     {
         "Symbol":"MCHP",
@@ -3495,7 +3495,7 @@
         "Headquarters Location":"Chandler, Arizona",
         "Date first added":"2007-09-07",
         "CIK":827054,
-        "Founded":null
+        "Founded":"1989"
     },
     {
         "Symbol":"MU",
@@ -3506,7 +3506,7 @@
         "Headquarters Location":"Boise, Idaho",
         "Date first added":"1994-09-27",
         "CIK":723125,
-        "Founded":null
+        "Founded":"1978"
     },
     {
         "Symbol":"MSFT",
@@ -3528,7 +3528,7 @@
         "Headquarters Location":"Memphis, Tennessee",
         "Date first added":"2016-12-02",
         "CIK":912595,
-        "Founded":null
+        "Founded":"1977"
     },
     {
         "Symbol":"MHK",
@@ -3539,7 +3539,7 @@
         "Headquarters Location":"Calhoun, Georgia",
         "Date first added":"2013-12-23",
         "CIK":851968,
-        "Founded":null
+        "Founded":"1878"
     },
     {
         "Symbol":"TAP",
@@ -3561,7 +3561,7 @@
         "Headquarters Location":"Chicago, Illinois",
         "Date first added":"2012-10-02",
         "CIK":1103982,
-        "Founded":null
+        "Founded":"2012"
     },
     {
         "Symbol":"MNST",
@@ -3572,7 +3572,7 @@
         "Headquarters Location":"Corona, California",
         "Date first added":"2012-06-28",
         "CIK":865752,
-        "Founded":null
+        "Founded":"2012 (1935)"
     },
     {
         "Symbol":"MCO",
@@ -3660,7 +3660,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"2005-03-14",
         "CIK":1021860,
-        "Founded":null
+        "Founded":"1841"
     },
     {
         "Symbol":"NTAP",
@@ -3671,7 +3671,7 @@
         "Headquarters Location":"Sunnyvale, California",
         "Date first added":"1999-06-25",
         "CIK":1002047,
-        "Founded":null
+        "Founded":"1992"
     },
     {
         "Symbol":"NFLX",
@@ -3693,7 +3693,7 @@
         "Headquarters Location":"Atlanta, Georgia",
         "Date first added":"1989-04-30",
         "CIK":814453,
-        "Founded":null
+        "Founded":"1903"
     },
     {
         "Symbol":"NEM",
@@ -3715,7 +3715,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2013-08-01",
         "CIK":1564708,
-        "Founded":null
+        "Founded":"2013 (1980)"
     },
     {
         "Symbol":"NWS",
@@ -3726,7 +3726,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2015-09-18",
         "CIK":1564708,
-        "Founded":null
+        "Founded":"2013 (1980)"
     },
     {
         "Symbol":"NEE",
@@ -3759,7 +3759,7 @@
         "Headquarters Location":"Washington County, Oregon",
         "Date first added":"1988-11-30",
         "CIK":320187,
-        "Founded":null
+        "Founded":"1964"
     },
     {
         "Symbol":"NI",
@@ -3774,14 +3774,14 @@
     },
     {
         "Symbol":"NBL",
-        "Security":"Noble Energy Inc",
+        "Security":"Noble Energy",
         "SEC filings":"reports",
         "GICS Sector":"Energy",
         "GICS Sub Industry":"Oil & Gas Exploration & Production",
         "Headquarters Location":"Houston, Texas",
         "Date first added":"2007-10-08",
         "CIK":72207,
-        "Founded":null
+        "Founded":"1932"
     },
     {
         "Symbol":"NSC",
@@ -3814,7 +3814,7 @@
         "Headquarters Location":"West Falls Church, Virginia",
         "Date first added":"1985-06-30",
         "CIK":1133421,
-        "Founded":null
+        "Founded":"1994 (Northrop 1939, Grumman 1930)"
     },
     {
         "Symbol":"NLOK",
@@ -3825,7 +3825,7 @@
         "Headquarters Location":"Tempe, Arizona",
         "Date first added":"2003-03-25",
         "CIK":849399,
-        "Founded":null
+        "Founded":"1982"
     },
     {
         "Symbol":"NCLH",
@@ -3847,7 +3847,7 @@
         "Headquarters Location":"Princeton, New Jersey",
         "Date first added":"2010-01-29",
         "CIK":1013871,
-        "Founded":null
+        "Founded":"1992"
     },
     {
         "Symbol":"NUE",
@@ -3858,7 +3858,7 @@
         "Headquarters Location":"Charlotte, North Carolina",
         "Date first added":"1985-04-30",
         "CIK":73309,
-        "Founded":null
+        "Founded":"1940"
     },
     {
         "Symbol":"NVDA",
@@ -3869,7 +3869,7 @@
         "Headquarters Location":"Santa Clara, California",
         "Date first added":"2001-11-30",
         "CIK":1045810,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"NVR",
@@ -3891,7 +3891,7 @@
         "Headquarters Location":"Springfield, Missouri",
         "Date first added":"2009-03-27",
         "CIK":898173,
-        "Founded":null
+        "Founded":"1957"
     },
     {
         "Symbol":"OXY",
@@ -3935,7 +3935,7 @@
         "Headquarters Location":"Tulsa, Oklahoma",
         "Date first added":"2010-03-15",
         "CIK":1039684,
-        "Founded":null
+        "Founded":"1906"
     },
     {
         "Symbol":"ORCL",
@@ -3946,7 +3946,7 @@
         "Headquarters Location":"Redwood Shores, California",
         "Date first added":"1989-08-31",
         "CIK":1341439,
-        "Founded":null
+        "Founded":"1977"
     },
     {
         "Symbol":"OTIS",
@@ -3979,7 +3979,7 @@
         "Headquarters Location":"Lake Forest, Illinois",
         "Date first added":"2017-07-26",
         "CIK":75677,
-        "Founded":null
+        "Founded":"1959"
     },
     {
         "Symbol":"PH",
@@ -3990,7 +3990,7 @@
         "Headquarters Location":"Cleveland, Ohio",
         "Date first added":"1985-11-30",
         "CIK":76334,
-        "Founded":null
+        "Founded":"1917"
     },
     {
         "Symbol":"PAYX",
@@ -4034,7 +4034,7 @@
         "Headquarters Location":"Worsley, UK",
         "Date first added":"2012-10-01",
         "CIK":77360,
-        "Founded":null
+        "Founded":"1966"
     },
     {
         "Symbol":"PBCT",
@@ -4045,7 +4045,7 @@
         "Headquarters Location":"Bridgeport, Connecticut",
         "Date first added":"2008-11-13",
         "CIK":1378946,
-        "Founded":null
+        "Founded":"1842"
     },
     {
         "Symbol":"PEP",
@@ -4067,7 +4067,7 @@
         "Headquarters Location":"Waltham, Massachusetts",
         "Date first added":"1985-05-31",
         "CIK":31791,
-        "Founded":null
+        "Founded":"1937"
     },
     {
         "Symbol":"PRGO",
@@ -4133,7 +4133,7 @@
         "Headquarters Location":"Irving, Texas",
         "Date first added":"2008-09-24",
         "CIK":1038357,
-        "Founded":null
+        "Founded":"1997"
     },
     {
         "Symbol":"PNC",
@@ -4144,7 +4144,7 @@
         "Headquarters Location":"Pittsburgh, Pennsylvania",
         "Date first added":"1988-04-30",
         "CIK":713676,
-        "Founded":null
+        "Founded":"1845"
     },
     {
         "Symbol":"PPG",
@@ -4177,7 +4177,7 @@
         "Headquarters Location":"Des Moines, Iowa",
         "Date first added":"2002-07-22",
         "CIK":1126328,
-        "Founded":null
+        "Founded":"1879"
     },
     {
         "Symbol":"PG",
@@ -4199,7 +4199,7 @@
         "Headquarters Location":"Mayfield Village, Ohio",
         "Date first added":"1997-08-04",
         "CIK":80661,
-        "Founded":null
+        "Founded":"1937"
     },
     {
         "Symbol":"PLD",
@@ -4210,7 +4210,7 @@
         "Headquarters Location":"San Francisco, California",
         "Date first added":"2003-07-17",
         "CIK":1045609,
-        "Founded":null
+        "Founded":"1983"
     },
     {
         "Symbol":"PRU",
@@ -4221,7 +4221,7 @@
         "Headquarters Location":"Newark, New Jersey",
         "Date first added":"2002-07-22",
         "CIK":1137774,
-        "Founded":null
+        "Founded":"1875"
     },
     {
         "Symbol":"PEG",
@@ -4265,7 +4265,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2013-02-15",
         "CIK":78239,
-        "Founded":null
+        "Founded":"1881"
     },
     {
         "Symbol":"QRVO",
@@ -4287,7 +4287,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"2009-07-01",
         "CIK":1050915,
-        "Founded":null
+        "Founded":"1997"
     },
     {
         "Symbol":"QCOM",
@@ -4309,7 +4309,7 @@
         "Headquarters Location":"Secaucus, New Jersey",
         "Date first added":"2002-12-12",
         "CIK":1022079,
-        "Founded":null
+        "Founded":"1967"
     },
     {
         "Symbol":"RL",
@@ -4320,7 +4320,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2007-02-02",
         "CIK":1037038,
-        "Founded":null
+        "Founded":"1967"
     },
     {
         "Symbol":"RJF",
@@ -4331,7 +4331,7 @@
         "Headquarters Location":"St. Petersburg, Florida",
         "Date first added":"2017-03-20",
         "CIK":720005,
-        "Founded":null
+        "Founded":"1962"
     },
     {
         "Symbol":"RTX",
@@ -4353,7 +4353,7 @@
         "Headquarters Location":"San Diego, California",
         "Date first added":"2015-04-07",
         "CIK":726728,
-        "Founded":null
+        "Founded":"1969"
     },
     {
         "Symbol":"REG",
@@ -4364,7 +4364,7 @@
         "Headquarters Location":"Jacksonville, Florida",
         "Date first added":"2017-03-02",
         "CIK":910606,
-        "Founded":null
+        "Founded":"1963"
     },
     {
         "Symbol":"REGN",
@@ -4375,7 +4375,7 @@
         "Headquarters Location":"Tarrytown, New York",
         "Date first added":"2013-05-01",
         "CIK":872589,
-        "Founded":null
+        "Founded":"1988"
     },
     {
         "Symbol":"RF",
@@ -4386,7 +4386,7 @@
         "Headquarters Location":"Birmingham, Alabama",
         "Date first added":"1998-08-28",
         "CIK":1281761,
-        "Founded":null
+        "Founded":"1971"
     },
     {
         "Symbol":"RSG",
@@ -4397,7 +4397,7 @@
         "Headquarters Location":"Phoenix, Arizona",
         "Date first added":"2008-12-05",
         "CIK":1060391,
-        "Founded":null
+        "Founded":"1998 (1981)"
     },
     {
         "Symbol":"RMD",
@@ -4408,7 +4408,7 @@
         "Headquarters Location":"San Diego, California",
         "Date first added":"2017-07-26",
         "CIK":943819,
-        "Founded":null
+        "Founded":"1989"
     },
     {
         "Symbol":"RHI",
@@ -4419,7 +4419,7 @@
         "Headquarters Location":"Menlo Park, California",
         "Date first added":"2000-12-05",
         "CIK":315213,
-        "Founded":null
+        "Founded":"1948"
     },
     {
         "Symbol":"ROK",
@@ -4463,7 +4463,7 @@
         "Headquarters Location":"Dublin, California",
         "Date first added":"2009-12-21",
         "CIK":745732,
-        "Founded":null
+        "Founded":"1982"
     },
     {
         "Symbol":"RCL",
@@ -4474,7 +4474,7 @@
         "Headquarters Location":"Miami, Florida",
         "Date first added":"2014-12-05",
         "CIK":884887,
-        "Founded":null
+        "Founded":"1997"
     },
     {
         "Symbol":"SPGI",
@@ -4496,7 +4496,7 @@
         "Headquarters Location":"San Francisco, California",
         "Date first added":"2008-09-15",
         "CIK":1108524,
-        "Founded":null
+        "Founded":"1999"
     },
     {
         "Symbol":"SBAC",
@@ -4529,7 +4529,7 @@
         "Headquarters Location":"Dublin, Ireland",
         "Date first added":"2012-07-02",
         "CIK":1137789,
-        "Founded":null
+        "Founded":"1979"
     },
     {
         "Symbol":"SEE",
@@ -4595,7 +4595,7 @@
         "Headquarters Location":"Woburn, Massachusetts",
         "Date first added":"2015-03-12",
         "CIK":4127,
-        "Founded":null
+        "Founded":"2002"
     },
     {
         "Symbol":"SLG",
@@ -4606,7 +4606,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2015-03-20",
         "CIK":1040971,
-        "Founded":null
+        "Founded":"1997"
     },
     {
         "Symbol":"SNA",
@@ -4639,7 +4639,7 @@
         "Headquarters Location":"Dallas, Texas",
         "Date first added":"1994-07-01",
         "CIK":92380,
-        "Founded":null
+        "Founded":"1967"
     },
     {
         "Symbol":"SWK",
@@ -4694,7 +4694,7 @@
         "Headquarters Location":"Kalamazoo, Michigan",
         "Date first added":"2000-12-12",
         "CIK":310764,
-        "Founded":null
+        "Founded":"1941"
     },
     {
         "Symbol":"SIVB",
@@ -4705,7 +4705,7 @@
         "Headquarters Location":"Santa Clara, California",
         "Date first added":"2018-03-19",
         "CIK":719739,
-        "Founded":null
+        "Founded":"1983"
     },
     {
         "Symbol":"SYF",
@@ -4727,7 +4727,7 @@
         "Headquarters Location":"Mountain View, California",
         "Date first added":"2017-03-16",
         "CIK":883241,
-        "Founded":null
+        "Founded":"1986"
     },
     {
         "Symbol":"SYY",
@@ -4738,7 +4738,7 @@
         "Headquarters Location":"Houston, Texas",
         "Date first added":"1986-12-31",
         "CIK":96021,
-        "Founded":null
+        "Founded":"1969"
     },
     {
         "Symbol":"TMUS",
@@ -4771,7 +4771,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2018-03-19",
         "CIK":946581,
-        "Founded":null
+        "Founded":"1993"
     },
     {
         "Symbol":"TPR",
@@ -4881,7 +4881,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2000-06-21",
         "CIK":98246,
-        "Founded":null
+        "Founded":"1837"
     },
     {
         "Symbol":"TJX",
@@ -4892,7 +4892,7 @@
         "Headquarters Location":"Framingham, Massachusetts",
         "Date first added":"1985-09-30",
         "CIK":109198,
-        "Founded":null
+        "Founded":"1987"
     },
     {
         "Symbol":"TSCO",
@@ -4903,7 +4903,7 @@
         "Headquarters Location":"Brentwood, Tennessee",
         "Date first added":"2014-01-24",
         "CIK":916365,
-        "Founded":null
+        "Founded":"1938"
     },
     {
         "Symbol":"TT",
@@ -4936,7 +4936,7 @@
         "Headquarters Location":"New York, New York",
         "Date first added":"2002-08-21",
         "CIK":86312,
-        "Founded":null
+        "Founded":"1853"
     },
     {
         "Symbol":"TFC",
@@ -4947,7 +4947,7 @@
         "Headquarters Location":"Charlotte, North Carolina",
         "Date first added":"1997-12-04",
         "CIK":92230,
-        "Founded":null
+        "Founded":"1872"
     },
     {
         "Symbol":"TWTR",
@@ -4991,7 +4991,7 @@
         "Headquarters Location":"Highlands Ranch, Colorado",
         "Date first added":"2016-03-07",
         "CIK":74208,
-        "Founded":null
+        "Founded":"1972"
     },
     {
         "Symbol":"ULTA",
@@ -5024,7 +5024,7 @@
         "Headquarters Location":"Baltimore, Maryland",
         "Date first added":"2014-05-01",
         "CIK":1336917,
-        "Founded":null
+        "Founded":"1996"
     },
     {
         "Symbol":"UA",
@@ -5035,7 +5035,7 @@
         "Headquarters Location":"Baltimore, Maryland",
         "Date first added":"2016-04-08",
         "CIK":1336917,
-        "Founded":null
+        "Founded":"1996"
     },
     {
         "Symbol":"UNP",
@@ -5068,7 +5068,7 @@
         "Headquarters Location":"Minnetonka, Minnesota",
         "Date first added":"1994-07-01",
         "CIK":731766,
-        "Founded":null
+        "Founded":"1977"
     },
     {
         "Symbol":"UPS",
@@ -5101,7 +5101,7 @@
         "Headquarters Location":"King of Prussia, Pennsylvania",
         "Date first added":"2014-09-20",
         "CIK":352915,
-        "Founded":null
+        "Founded":"1979"
     },
     {
         "Symbol":"UNM",
@@ -5112,7 +5112,7 @@
         "Headquarters Location":"Chattanooga, Tennessee",
         "Date first added":"1994-03-01",
         "CIK":5513,
-        "Founded":null
+        "Founded":"1999"
     },
     {
         "Symbol":"VFC",
@@ -5145,7 +5145,7 @@
         "Headquarters Location":"Palo Alto, California",
         "Date first added":"2007-02-12",
         "CIK":203527,
-        "Founded":null
+        "Founded":"1948"
     },
     {
         "Symbol":"VTR",
@@ -5156,7 +5156,7 @@
         "Headquarters Location":"Chicago, Illinois",
         "Date first added":"2009-03-04",
         "CIK":740260,
-        "Founded":null
+        "Founded":"1998"
     },
     {
         "Symbol":"VRSN",
@@ -5167,7 +5167,7 @@
         "Headquarters Location":"Dulles, Virginia",
         "Date first added":"2006-02-01",
         "CIK":1014473,
-        "Founded":null
+        "Founded":"1995"
     },
     {
         "Symbol":"VRSK",
@@ -5200,7 +5200,7 @@
         "Headquarters Location":"Cambridge, Massachusetts",
         "Date first added":"2013-09-23",
         "CIK":875320,
-        "Founded":null
+        "Founded":"1989"
     },
     {
         "Symbol":"VIAC",
@@ -5222,7 +5222,7 @@
         "Headquarters Location":"San Francisco, California",
         "Date first added":"2009-12-21",
         "CIK":1403161,
-        "Founded":null
+        "Founded":"1958"
     },
     {
         "Symbol":"VNO",

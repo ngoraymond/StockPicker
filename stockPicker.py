@@ -3,7 +3,7 @@ import yfinance as yf
 from bs4 import BeautifulSoup
 import pandas
 import time
-import datetime
+from datetime import datetime, timedelta
 import os
 import itertools
 import statistics
@@ -158,15 +158,15 @@ def picker():
         elapsedTime = time.time() - last_modified
         if elapsedTime > 86400:
             print('Refreshing')
-            stock_info_all_at_once()
+            get_stock_info()
     else:
-        stock_info_all_at_once()
+        get_stock_info()
     #GO TO EXCEL FILE, MAKE SURE AT LEAST CERTAIN AMOUNT OF STOCKS
     grpBy = pandas.read_excel(stock_info_excel_path)
     stock_dict = grpBy.to_dict('records')
     if len(stock_dict) < 450:
         print('Redoing')
-        stock_info_all_at_once()
+        get_stock_info()
         picker()
 
     #updating date
